@@ -1,5 +1,5 @@
 # eureka
--------
+[示例代码](../../example/eureka/)
 ## eureka在单独，两个，多个的时候如何部署
 ###  一个eureka单独部署
 1. application.yml
