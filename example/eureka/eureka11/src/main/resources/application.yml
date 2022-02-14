@@ -1,0 +1,18 @@
+server:
+  port: 12011
+  servlet:
+    encoding:
+      charset: utf-8
+      force-response: true
+spring:
+  application:
+    name: eureka11
+
+eureka:
+  client:
+#    单节点，不需要自己注册自己
+    register-with-eureka: false
+#    单节点，不需要从其他的eureka拉取服务注册信息
+    fetch-registry: false
+#    service-url:
+#      defaultZone: http://127.0.0.1:12011/eureka/

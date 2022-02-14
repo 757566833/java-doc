@@ -1,0 +1,15 @@
+server:
+  port: 12033
+  servlet:
+    encoding:
+      charset: utf-8
+      force-response: true
+spring:
+  application:
+    name: eurekaServer
+eureka:
+  instance:
+    hostname: eureka3.127.0.0.1.nip.io
+  client:
+    service-url:
+      defaultZone: http://eureka1.127.0.0.1.nip.io:12031/eureka/,http://eureka2.127.0.0.1.nip.io:12032/eureka/,http://eureka3.127.0.0.1.nip.io:12033/eureka/

@@ -1,0 +1,9 @@
+server:
+  port: 12301
+  servlet:
+    encoding:
+      charset: utf-8
+      force-response: true
+spring:
+  application:
+    name: client
