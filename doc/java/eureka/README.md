@@ -80,3 +80,9 @@ st->op1->op2->end
 ### 多个eureka部署
 
 代码自拉
+
+具体三个节点的文档 
+
+https://cloud.spring.io/spring-cloud-netflix/reference/html/
+ 
+ 搜索 application.yml (Three Peer Aware Eureka Servers)
