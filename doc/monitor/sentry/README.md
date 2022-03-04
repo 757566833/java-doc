@@ -55,3 +55,23 @@ mail.from: 'fzcode@126.com'
 https://github.com/getsentry/self-hosted/issues/71#issuecomment-380057664
 
 不知道是哪里的问题 或许是126不支持tls 这部分是我的盲区
+
+# 客户端
+## npm项目
+1. 电脑这边如果安装在nextjs上面，需要安装@sentry/next,这里面有一个sentry/cli,里面的install脚本需要翻墙安装
+```
+// 解决方法
+// 新建.yarnrc npm用.npmrc
+// 内容如下
+SENTRYCLI_CDNURL "https://cdn.npm.taobao.org/dist/sentry-cli"
+sentrycli_cdnurl "https://cdn.npm.taobao.org/dist/sentry-cli"
+```
+> 这个链接怎么来的不清楚，网上找到的，随着npm.taobao.org的域名失效，可能会出现一些问题
+2. 参数配置（nextjs相关）
+全局变量要设置
+```
+SENTRY_URL=demo      //这个是url，不需要带path 例如https://www.baidu.com/
+SENTRY_ORG=demo      // 这个org 在settings><user>>general 里面有一个organization slug 最简单的办法就是 进入setting 然后右上角搜索organization
+SENTRY_PROJECT=      //项目名称
+SENTRY_AUTH_TOKEN=a82d9abbc574404a932ee416032d781df26f53570eef4493bec928537375a016              // setting>account>api>auth>tokens 新建一个
+```
