@@ -75,3 +75,7 @@ SENTRY_ORG=demo      // 这个org 在settings><user>>general 里面有一个orga
 SENTRY_PROJECT=      //项目名称
 SENTRY_AUTH_TOKEN=a82d9abbc574404a932ee416032d781df26f53570eef4493bec928537375a016              // setting>account>api>auth>tokens 新建一个
 ```
+3. 集成nextjs
+```
+NEXT_PUBLIC_SENTRY_DSN=demo //这个url 在 settings-><user>-><项目>->general->client keys ；直接从项目进去，然后点击设置按钮也可到达；注意不同的环境要改成相对的域名或ip
+```
