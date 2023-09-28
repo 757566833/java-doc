@@ -5,7 +5,11 @@
 
 https://cockpit-project.org/running.html#centos
 
-1.1 https://github.com/cockpit-project/cockpit/wiki/Proxying-Cockpit-over-NGINX 
+1.1 
+https://github.com/cockpit-project/cockpit/wiki/Proxying-Cockpit-over-NGINX 
+
+1.2 
+https://github.com/cockpit-project/cockpit/issues/18427
 
 2. https
 https://cockpit-project.org/guide/latest/https.html
